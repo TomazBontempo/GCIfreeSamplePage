@@ -86,7 +86,6 @@
                     id="cadastroBtn"
                     type="submit"
                     class="btn btn-outline-warning btnSend m-4"
-                    onclick="handleEmailTyped()"
                   >
                     Enviar o passo a passo
                   </button>
@@ -113,14 +112,6 @@
                         }
                       });
                     };
-
-                    function handleEmailTyped() {
-                      const emailTyped = document.getElementById('email').value
-
-                      if (!emailTyped) {
-                        alert('Você precisa informar o email para qual enviaremos o passo a passo')
-                      }
-                    }
 
                     form.addEventListener("submit", async (e) => {
                       e.preventDefault();
